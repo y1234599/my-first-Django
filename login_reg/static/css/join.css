@@ -1,0 +1,73 @@
+h3 {
+    margin-left: 10px;
+}
+/* 宣传视频 */
+#video_main {
+    width: 80%;
+    height: 400px;
+    background-color: white;
+    margin: 20px auto;
+}
+#video_main video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* 主要内容 */
+li {
+    width: 90%;
+    height: 13%;
+    margin: 10px auto 5px;
+    border-bottom: 1px solid black;
+}
+#main_message {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+}
+#main_message_left {
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+}
+#main_message_left img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    float: left;
+}
+#main_message_left ul {
+    width: 90%;
+    height: 100%;
+    margin: 30px auto;
+    float: left;
+    background-color: white;
+    border-radius: 8px;
+}
+
+#main_message_right {
+    width: 67%;
+    height: 100%;
+    display: inline-block;
+    margin: 0 15px;
+}
+#main_message_right ul {
+    width: 31%;
+    height: 45%;
+    margin: 15px 0px 0px 15px;
+    padding-top: 20px;
+    float: left;
+    background-color: white;
+    border-radius: 8px;
+}
+#main_message_right ul li {
+    margin: 7px auto;
+}
+
+/* 小图片 */
+#small_img {
+    width: 90%;
+    height: 50%;
+    margin: 10px auto;
+}

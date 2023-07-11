@@ -1,0 +1,96 @@
+/* 主要图片 */
+#help_main_picture {
+    width: 76%;
+    height: 300px;
+    background-color: rgb(69, 141, 172);
+    border-radius: 8px;
+    margin: 30px 207px 30px;
+}
+#help_main_picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* 主要内容框 */
+#main {
+    width: 76%;
+    height: 600px;
+    border-radius: 8px;
+    margin: 30px 207px 30px;
+}
+/* 服务字体框 */
+#save_frame {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    float: left;
+    text-align: center;
+    border-radius: 8px;
+}
+#save_frame h1 {
+    padding-top: 20px;  
+}
+/* 服务列表框 */
+#save_list {
+    width: 25%;
+    height: 600px;
+    background-color: rgb(69, 141, 172);
+    border-radius: 8px;
+    float:left;
+}
+#save_list ul {
+    width: 80%;
+    height: 470px;
+    background-color: rgb(69, 141, 172);
+    margin: 100px 10% 0px;
+}
+#save_list li {
+    background-color: rgb(69, 141, 172);
+    width: 90%;
+    height: 30px;
+    margin: 10px auto;
+    padding-top: 20px;
+    border-bottom: 1px solid white;
+}
+
+/* 公告主框  */
+#message_frame {
+    width: 73%;
+    height: 500px;
+    background-color: rgb(69, 141, 172);
+    border-radius: 8px;
+    float:right;
+}
+#bulletin_frame{
+    width: 80%;
+    height: 100px;
+    background-color: white;
+}
+#message_frame h1 {
+    background-color: rgb(69, 141, 172);
+    display: block;
+    width: 80%;
+    height: 80px;
+    padding-top: 30px;
+    margin: 0px auto 20px;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+#message_frame li {
+    background-color: rgb(69, 141, 172);
+    width: 90%;
+    height: 30px;
+    margin: 10px auto;
+    padding-top: 20px;
+    border-bottom: 1px solid white;
+}
+li a {
+    color:black;
+    text-decoration: none;
+    margin-top: 30px;
+
+}
+li a:hover {
+    color: blue;
+}

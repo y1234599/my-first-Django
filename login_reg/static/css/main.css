@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: blue
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 1620px;
+}
+
+.container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+
+/* 网页背景 */
+#main_body {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* 首行功能框 */
+#row1 {
+    background: rgb(69, 141, 172);
+    border-radius: 8px;
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 75%;
+}
+
+/* 首行功能按键 */
+div #head {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(69, 141, 172);
+    display: inline-block;
+    font-size: 17px;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 20px;
+    padding: 0 20px;
+}
+
+#main {
+    width: 85%;
+    height: 800px;
+    margin: 0 auto;
+}
+
+div #head:hover {
+    background: rgb(24, 49, 59);
+    border-radius: 8px;
+}
+
+/* 主要部分 */
+.txt_main {
+    /* 主框 */
+    background-color: rgb(69, 141, 172);
+    width: 67%;
+    margin: 50px auto 0px;
+    border-radius: 8px;
+    height: 465px;
+    text-align: center;
+}
+#img_box {
+    width: 100%;
+    height: 410px;
+    position: relative;
+}
+#img_box:hover {
+    cursor: pointer;  /*光标变手指 */
+}
+#main_img {
+    width: 100%;
+    height: 400px;
+    margin: 10px auto;
+}
+
+
+/* 图片框下部 */
+#img_bottom {
+    width: 100%;
+    height: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*图片对应的点*/
+.txt_main #img_bottom li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: white;
+    margin: 0 5px;
+
+}
+.txt_main #img_bottom .drop {
+    background-color: black;
+}
+
+/* 图片切换按钮 */
+.btnL {
+    width: 5%;
+    height: 65px;
+    position: absolute;     /* 添加绝对定位 */
+    top: 43%;       /* 调整按钮在垂直方向上的位置 */
+    left: 0;         /* 调整按钮在水平方向上的位置 */
+    background-image: url(../img/before.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    opacity: 0.3; /*透明度*/
+}
+.btnL:hover {
+    opacity: 1.0;
+    cursor: pointer;  /*光标变手指 */
+}
+
+.btnR {
+    width: 5%;
+    height: 65px;
+    position: absolute;           /* 添加绝对定位 */
+    top: 43%;                     /* 调整按钮在垂直方向上的位置 */
+    right: 0;                      /* 调整按钮在水平方向上的位置 */
+    background-image: url(../img/next.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    opacity: 0.3;
+}
+.btnR:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+/* 浮动框 */
+#flr {
+    /* 左侧边栏 */
+    float: left;
+    background-color: rgb(69, 141, 172);
+    width: 160px;
+    height: 600px;
+    margin: 0px 15px 0px 20px;
+    border-radius: 8px;
+}
+#flr li {
+    display: block;
+    border-bottom: 1px solid blue;
+    padding: 8px;
+    margin:3px 23px;
+    height: 17px;
+}
+#flr a {
+    color:black;
+    text-decoration: none;
+}
+#flr a:hover {
+    color: blue;
+}
+
+#fll {
+    /* 右侧边栏 */
+    float: right;
+    background-color: rgb(69, 141, 172);
+    width: 160px;
+    height: 600px;
+    margin: 0px 20px 0 5px;
+    border-radius: 8px;
+}
+#fll li {
+    display: block;
+    border-bottom: 1px solid blue;
+    padding: 8px;
+    margin:3px 23px;
+    height: 17px;
+}
+#fll a {
+    color: black;
+    text-decoration: none;
+}
+#fll a:hover {
+    color: blue;
+}
+
+.fasmall {
+    /* 小框父框 */
+    background: rgb(69, 141, 172);
+    margin: 15px auto 0;
+    border-radius: 8px;
+    width: 67%;
+    padding-left: 15px;
+    height: 180px;
+
+}
+.flsmall {
+    /* 小框 */
+    background-color: white;
+    float:left;
+    margin: 10px 15px 0px 15px;
+    border-radius: 8px;
+    width:29%;
+    height:160px;
+}
+.flsmall li {
+    display: block;
+    border-bottom: 1px solid blue;
+    padding: 8px;
+    margin:3px 23px;
+    height: 17px;
+}
+.flsmall a {
+    text-decoration: none;
+    color: black;
+}
+.flsmall a:hover {
+    color: blue;
+}
+
+
+
+/* 声明部分 */
+.footer {
+    margin: 90px 200px 5px;
+    height: 180px;
+    text-align: center;
+    padding: 10px;
+}
+.img {
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+    padding: 0px 3px;
+    width: 304;
+    height: 80;
+}
+
+.font_state {
+    font-size: 6px;
+    text-align: center;
+    height:auto;
+    margin-top: 20px;
+    color:white
+}
+
+
+/* 共用css */
+/* 主要图片 */
+#main_picture {
+    width: 76%;
+    height: 300px;
+    background-color: rgb(69, 141, 172);
+    border-radius: 8px;
+    margin: 30px 207px 30px;
+}
+#main_picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* 错误提示 */
+.error_msg {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    width: 40%;
+    margin: 0px auto;
+  }
+  

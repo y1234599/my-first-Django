@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/login_register.css">
+    <script src="../static/js/main.js"></script>
+    <title>登录</title>
+</head>
+
+<body id="main_body">
+    <div id="main_login">
+        <h1>用户登录</h1>
+        <form method="POST" action="/login/">
+            {% csrf_token %}
+            <p id="email_password">
+                <label for="username">电子邮箱: &nbsp;</label>
+                <input id="text" type="email" name="username">
+            </p>
+
+            <p id="email_password">
+                <label for="password">请输入密码:</label>
+                <input id="text" type="password" name="password">
+            </p>
+
+            <!-- 弹出错误 -->
+            {% if error_msg %}
+            <div class="error_msg">
+                {{ error_msg }}
+            </div>
+            {% endif %}
+
+            <li><input id="btn" type="submit" value="登录"></li>
+            <li><input id="btn" type="button" value="注册" onclick="get_link('/register/')"></li>
+        </form>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>首页</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+    <script src="../static/js/main.js"></script>
+</head>
+
+<body id="main_body" class="container">
+    <img src="../static/img/logo_top.png">
+
+    <!-- 首行功能样式 -->
+    <div id="row1">
+        <a href="http://127.0.0.1:8000/main_page/" id="head" target="_self"
+            style="background-color: rgb(24, 49, 59);">首页</a>
+        <a href="http://127.0.0.1:8000/about/" id="head" target="_self">关于我们</a>
+        <a href="http://127.0.0.1:8000/cooperation/" id="head" target="_self">交流合作</a>
+        <a href="http://127.0.0.1:8000/join/" id="head" target="_self">加入我们</a>
+        <a href="http://127.0.0.1:8000/help/" id="head" target="_self">服务</a>
+    </div>
+
+
+
+
+    <div id="main">
+        <!-- 左侧边栏 -->
+        <div id="flr">
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+        </div>
+
+        <!-- 右侧边栏 -->
+        <div id="fll">
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+            <li><a href="#">链接链接</a></li>
+        </div>
+
+        <!-- 主体 -->
+        <div class="txt_main">
+            <div id="img_box">
+                <img src="../static/img/1.jpg" alt="图片丢失" id="main_img">
+                <button class="btnL"></button>
+                <button class="btnR"></button>
+            </div>
+            <p style="width: 100%; text-align: center;">图片1</p>
+            <ul id="img_bottom">
+                <li class="drop"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <!-- 小框 -->
+        <div class="fasmall">
+            <div class="flsmall">
+                <li><a href="#">链接链接</a></li>
+                <li><a href="#">链接链接</a></li>
+                <li><a href="#">链接链接</a></li>
+                <li><a href="#">链接链接</a></li>
+            </div>
+            <div class="flsmall">
+                <li><a href="#">链接链接</a></li>
+                <li><a href="#">链接链接</a></li>
+                <li><a href="#">链接链接</a></li>
+                <li><a href="#">链接链接</a></li>
+            </div>
+            <div class="flsmall">
+                <li><a href="#">链接链接</a></li>
+                <li><a href="#">链接链接</a></li>
+                <li><a href="#">链接链接</a></li>
+                <li><a href="#">链接链接</a></li>
+            </div>
+        </div>
+
+
+        <!-- 结尾声明 -->
+        <div class="footer">
+            <br>
+            <img class="img" src="../static/img/logo_botttom.png" style="display: block; margin: auto;">
+            <p class="font_state">
+                Copyright © 2011 Huaihua University All Rights Reserved 怀化学院版权所有 湘ICP备13011546号-1 湘教QS3-200505-000098
+                湘公网安备43120202000202号
+            </p>
+            <p class="font_state">
+                地址：中国·湖南·怀化 怀化市鹤城区怀东路180号（西校区） 怀化市鹤城区金海路138号（东校区） 怀化市中方县城北鸭嘴岩镇（中方校区） 邮编：418000
+            </p>
+        </div>
+
+        <script>
+            //图片轮播计时器
+            let n = setInterval(Loop_picture, 1000);
+
+            //下一张图片按键响应
+            const next = document.querySelector(`.txt_main #img_box .btnR`);
+            //下一张图片事件监听
+            next.addEventListener('mouseenter', stopTimer);
+            next.addEventListener('mouseleave', startTimer);
+            next.addEventListener('click', next_switch);
+
+            //上一张图片按键响应
+            const previous = document.querySelector(`.txt_main #img_box .btnL`);
+            //上一张图片事件监听
+            previous.addEventListener('mouseenter', stopTimer);
+            previous.addEventListener('mouseleave', startTimer);
+            previous.addEventListener('click', previous_switch);
+
+            //光标悬浮于图片时的事件监听
+            const imgs = document.querySelector(`.txt_main #img_box`);
+            imgs.addEventListener('mouseenter', stopTimer);
+            imgs.addEventListener('mouseleave', startTimer);
+        </script>
+</body>
+
+</html>
